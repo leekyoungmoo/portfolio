@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내셔널지오그래픽</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!---- cdn폰트어섬 링크자리-->
+    <link rel="stylesheet" href="css/홈페이지.css">
+	<style type="text/css">
+
+		* { box-sizing: border-box; }
+	
+		.video-background {
+	
+			background: #000;
+	
+			position: fixed;
+	
+			top: 0; right: 0; bottom: 0; left: 0;
+	
+			z-index: -99;
+	
+		}
+	
+		.video-foreground,
+	
+		.video-background iframe {
+	
+			position: absolute;
+	
+			top: 0;
+	
+			left: 0;
+	
+			width: 100%;
+	
+			height: 100%;
+	
+			pointer-events: none;
+	
+		}
+	
+		@media (min-aspect-ratio: 16/9) {
+	
+		.video-foreground { height: 300%; top: -100%; }
+	
+		}
+	
+		@media (max-aspect-ratio: 16/9) {
+	
+		.video-foreground { width: 300%; left: -100%; }
+	
+		}
+	
+	
+	</style>
+    
+</head>
+
+	<body>
+		
+		<header> 
+			<h1> <a href="#"><img src="img/national.png"></a></h1>		
+			<ul id="gnb">
+				<li class="#">
+					<a href="#"><em>About NGC</em></a>		
+					<ul>
+						<li><a href="#"><em>VISION</em></a></li>
+					</ul>		
+				</li>
+				<li>				
+					<a href="#"><em>Company History</em></a><ul>
+						<li><a href="#"><em>NATURE</em></a></li>
+						<li><a href="#"><em>UNIVERSE</em></a></li>
+						<li><a href="#"><em>SCIENCE</em></a></li>
+						<li><a href="#"><em>HUMAN</em></a></li>
+					</ul>						
+				</li>	
+				<li>
+					<a href="#"><em>Brand Info</em></a>	
+					<ul>
+						<li><a href="#"><em>DISENYPLUS</em></a></li>
+						<li><a href="#"><em>STORE</em></a></li>
+						<li><a href="#"><em>MAGAZIENS</em></a></li>
+						<li><a href="#"><em>SOCOAL</em></a></li>
+					</ul>					
+				</li>
+				
+				<li>
+					<a href="#"><em> Community</em></a>	
+					<ul>
+						<li><a href="#"><em>연결</em></a></li>
+						<li><a href="#"><em>오시는길</em></a></li>
+						<li><a href="#"><em>연락처</em></a></li>
+						<li><a href="#"><em>게시판</em></a></li>
+					</ul>					
+				</li>
+				<li>
+					<a href="#"><em>NGC APPAREL</em></a>
+					<ul>
+						<li><a href="#"><em>MNA</em></a></li>
+						<li><a href="#"><em>WOMAN</em></a></li>
+						<li><a href="#"><em>KIDS</em></a></li>
+						<li><a href="#"><em>ETC</em></a></li>
+					</ul>						
+				</li>
+				
+			</ul>
+		</header>
+
+		<!-----------------배경화면 부분------------------------------------------------------------>
+		<div class="video-background">
+
+			<div class="video-foreground">
+
+			<iframe src="https://www.youtube.com/embed/WJJGADPXZ-c?controls=0&showinfo=0&rel=0&playlist=WJJGADPXZ-c&autoplay=1&loop=1&mute=1" frameborder="0" allowfullscreen></iframe>
+		
+			</div>
+
+		</div>
+		<!-----------------배경화면 부분 end-------------------------------------------------------->
+
+		<!-- sns 버튼모음 -->
+		<ul id="sns">
+			<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+			<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+			<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+			<li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+		</ul>
+
+		<!-- 웹폰트 텍스트박스 -->
+		<section class="txtBox">
+			<p class="txt">James Webb : <b>humanity's eyes</b></p>
+			<p class="tit">The Universe</p>
+			
+			
+		</section>
+		
+		<!-- 하단 컨텐츠박스 -->
+		<section id="side">
+			<div class="con">
+				<p>
+					<em>James Webb</em>
+					<a href="#"><img src="img/James Webb.jpg" /></a>				
+				</p>
+				<p>
+					<em>Planet</em>
+					<a href="#"><img src="img/planet.jpg" /></a>				
+				</p>
+				<p>
+					<em>Analysis</em>
+					<a href="#"><img src="img/analysis.jpg" /></a>				
+				</p>		
+			</div>	
+			<!-- 자동롤링 버튼 -->
+			<div class="btnContents">
+				<i class="fa fa-angle-double-left"></i>
+				<i class="fa fa-angle-double-left"></i>  
+				<i class="fa fa-angle-double-left"></i>
+			</div>
+		</section>
+		
+
+	</body>
+	</html>
